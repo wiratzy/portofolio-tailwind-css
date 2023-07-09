@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Tailwind CSS</title>
     <link rel="stylesheet" href="dist/output.css">
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
-} else {
-  document.documentElement.classList.remove('dark')
-}
-    </script>
 </head>
 <body>
 
@@ -262,15 +255,15 @@
                     <form action="">
                         <div class="w-full px-4 mb-8">
                             <label for="name" class="text-base text-primary font-bold uppercase dark:text-white">Nama</label>
-                            <input type="text" id="name" class="w-full bg-slate-300 text-black p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary dark:bg-slate-800 ">
+                            <input type="text" id="name" class="w-full bg-slate-300 text-black p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary dark:bg-slate-800 dark:text-white">
                         </div>
                         <div class="w-full px-4 mb-8">
                             <label for="email" class="text-base text-primary font-bold uppercase dark:text-white">Email</label>
-                            <input type="text" id="email" class="w-full bg-slate-300 dark:bg-slate-800 text-black p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary ">
+                            <input type="text" id="email" class="w-full bg-slate-300 dark:bg-slate-800 text-black p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary dark:text-white">
                         </div>
                         <div class="w-full px-4 mb-8">
                             <label for="pesan" class="text-base text-primary font-bold uppercase dark:text-white">Pesan</label>
-                    <textarea type="text" id="name" class="w-full bg-slate-300 text-black p-3 rounded-md dark:bg-slate-800 focus:outline-none focus:ring-1 focus:border-primary h-32 "></textarea>
+                    <textarea type="text" id="name" class="w-full bg-slate-300 text-black p-3 rounded-md dark:bg-slate-800 focus:outline-none focus:ring-1 focus:border-primary h-32 dark:text-white "></textarea>
                 </div>
                 <div class="w-full px-4">
                     <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500 dark:bg-slate-800">Kirim</button>
